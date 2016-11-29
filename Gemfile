@@ -1,8 +1,10 @@
 source "https://rubygems.org"
 
- ruby '2.3.3'
+ ruby '2.2.3'
  gem "rspec"
  gem "capybara"
  gem "selenium-webdriver"
- gem "sinatra",require:false
+ gem "sinatra"
  gem "rspec-sinatra"
+ gem 'data_mapper'
+ gem 'dm-postgres-adapter'
