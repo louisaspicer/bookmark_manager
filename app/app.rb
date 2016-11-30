@@ -1,3 +1,5 @@
+ENV["RACK_ENV"] ||= "development"
+
 require 'sinatra/base'
 require './app/models/link.rb'
 
@@ -21,10 +23,6 @@ class BookmarkManager < Sinatra::Base
     Link.create(url: params[:URL], title: params[:title])
     redirect '/links'
   end
-
-
-
-
 
 
   # start the server if ruby file executed directly

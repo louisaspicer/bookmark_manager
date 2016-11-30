@@ -2,6 +2,7 @@ require 'spec_helper'
 require 'database_cleaner'
 
 feature "New links page" do
+
   scenario "Adding a bookmark for Google" do
 
     visit '/links/new'
@@ -14,6 +15,7 @@ feature "New links page" do
     end
 
   end
+
 
 
 end

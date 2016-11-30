@@ -3,6 +3,7 @@ require 'database_cleaner'
 
 
 feature "visiting the home page" do
+
   scenario "visit the home page and see our bookmarks" do
     Link.create(url: 'http//www.reddit.com', title: 'Reddit')
 
