@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'database_cleaner'
 
 
 feature "visiting the home page" do
@@ -14,4 +15,5 @@ feature "visiting the home page" do
     end
 
   end
+
 end

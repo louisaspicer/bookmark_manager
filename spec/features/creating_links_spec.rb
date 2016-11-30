@@ -1,7 +1,9 @@
 require 'spec_helper'
+require 'database_cleaner'
 
 feature "New links page" do
   scenario "Adding a bookmark for Google" do
+
     visit '/links/new'
     fill_in('title', with: 'Google')
     fill_in('URL', with: 'www.google.co.uk')
@@ -12,5 +14,8 @@ feature "New links page" do
     within 'ul#links' do
       expect(page).to have_content('Google')
     end
+
   end
+
+
 end
