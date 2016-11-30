@@ -9,8 +9,6 @@ feature "New links page" do
     fill_in('URL', with: 'www.google.co.uk')
     click_button('Submit')
 
-    visit '/links'
-
     within 'ul#links' do
       expect(page).to have_content('Google')
     end

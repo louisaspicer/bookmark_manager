@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './app/models/link.rb'
 
 
 class BookmarkManager < Sinatra::Base
@@ -18,7 +19,9 @@ class BookmarkManager < Sinatra::Base
 
   post '/links' do
     Link.create(url: params[:URL], title: params[:title])
+    redirect '/links'
   end
+
 
 
 
