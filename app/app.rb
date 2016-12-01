@@ -7,7 +7,7 @@ require './app/models/link.rb'
 class BookmarkManager < Sinatra::Base
 
   get '/' do
-    'Hello BookmarkManager!'
+    redirect '/links'
   end
 
   get '/links' do
@@ -20,7 +20,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/links' do
-    Link.create(url: params[:URL], title: params[:title])
+    Link.create(url: params[:URL], title: params[:title], tags: params[:tags])
     redirect '/links'
   end
 

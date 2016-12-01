@@ -14,7 +14,12 @@ feature "visiting the home page" do
     within 'ul#links' do
       expect(page).to have_content('Reddit')
     end
+  end
 
+  scenario "create a new bookmark button" do
+    visit '/'
+    click_button('Create a bookmark')
+    expect(page).to have_content('Title:')
   end
 
 end
