@@ -13,3 +13,4 @@ end
 gem "sinatra"
 gem "datamapper"
 gem "dm-postgres-adapter"
+gem "rake"
