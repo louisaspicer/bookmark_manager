@@ -1,0 +1,9 @@
+<h1>Links corresponding to <%=@filter%>:</h1>
+
+<ul id="filtered">
+<% filtered = @linktags.select {|linktag| linktag.tag.content == @filter} %>
+<% filtered.each {|linktag| %>
+  <li>
+  Title: <%= linktag.link.title %>
+  URL: <%= linktag.link.url %>
+  <% } %></ul>
