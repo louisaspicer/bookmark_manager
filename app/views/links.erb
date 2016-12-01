@@ -2,9 +2,11 @@
   <head>
   </head>
   <body>
-<ul id="links"><%@links.each {|link|%>
+<ul id="linktags"><%@linktags.each {|linktag|%>
 <li>
-Title: <%= link.title %>
-URL: <%= link.url %>
+Title: <%= linktag.link.title %>
+URL: <%= linktag.link.url %>
+TAG: <%= linktag.tag.content %>
 <% }%></ul>
+
 </body>

@@ -8,6 +8,7 @@ group :test do
   gem "rspec-sinatra"
   gem "selenium-webdriver"
   gem "database_cleaner"
+  gem 'pry'
 end
 
 gem "sinatra"
