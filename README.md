@@ -21,6 +21,8 @@ For this week, our challenge is to build a web app that stores web bookmarks in 
 * Refactoring more complex apps
 * Creating user stories
 
+### User Stories:
+
 ```
 As a user  
 so that I can see my link collection  
