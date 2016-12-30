@@ -7,6 +7,17 @@ require_relative 'data_mapper_setup'
 
 class BookmarkManager < Sinatra::Base
   enable :sessions
+  set :session_secret, 'super_secret'
+
+  get '/signup' do
+    erb :sign_up
+  end
+
+  post '/users' do
+    User.create(email: params[:email],
+                password: params[:password])
+    redirect to('/links')
+  end
 
   get '/' do
     erb :index
